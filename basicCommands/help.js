@@ -17,7 +17,7 @@ module.exports = {
         url: 'https://discord.gg/FUEHs7RCqz'
     })
      
-      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [Skip-Shop](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
+      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By Skip-Shop**\n\n__**COMMANDS :**__ `)
       .addFields(
       
         {
@@ -77,6 +77,7 @@ module.exports = {
     const row = new ActionRowBuilder()
       .addComponents(button1, button2, button3);
     
-    message.reply({ embeds: [embed], components: [row] });
+    message.reply({ embeds: [embed]});
+    // message.reply({ embeds: [embed], components: [row] });
   },
 };
